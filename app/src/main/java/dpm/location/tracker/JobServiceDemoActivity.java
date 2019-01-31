@@ -97,7 +97,6 @@ public class JobServiceDemoActivity extends AppCompatActivity {
 
     private void scheduleTask() {
         int timeInSec = 5;
-
         Intent intent = new Intent(this, TimeZoneBroadcastReceiver.class);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(
                 this.getApplicationContext(), 234, intent, 0);
